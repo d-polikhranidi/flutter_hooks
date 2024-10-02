@@ -35,12 +35,10 @@ class _TabControllerHook extends Hook<TabController> {
   final int initialIndex;
 
   @override
-  HookState<TabController, Hook<TabController>> createState() =>
-      _TabControllerHookState();
+  HookState<TabController, Hook<TabController>> createState() => _TabControllerHookState();
 }
 
-class _TabControllerHookState
-    extends HookState<TabController, _TabControllerHook> {
+class _TabControllerHookState extends HookState<TabController, _TabControllerHook> {
   late final controller = TabController(
     length: hook.length,
     initialIndex: hook.initialIndex,
